@@ -14,7 +14,7 @@
 
 - #### SingleNumber: 정답에 포함되는 단일 숫자 원시 값을 저장
     - 입력 받은 값을 검증한다.
-        - [ ] 제한 범위 내에 포함되는 값이 아니라면 `IllegalArgumentException` 예외 처리
+        - [x] 제한 범위 내에 포함되는 값이 아니라면 `IllegalArgumentException` 예외 처리
 
 - #### Answer: 3개의 단일 숫자를 가지는 리스트를 저장
     - 입력 받은 값을 검증한다.
