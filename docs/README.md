@@ -48,15 +48,12 @@
 - ### util
 
     - ### InputParser
-        - #### 정답 값 파싱 및 Answer 객체 반환
-            - validator 를 통한 입력 값 검증
-                - [ ] 정답 객체를 생성할 단일 숫자 객체로 변환
+        - 각 기능별 validator 를 통한 입력 값 검증
+            - #### 정답 값 파싱 및 Answer 객체 반환
+                - [x] 정답 객체를 생성할 단일 숫자 객체로 변환
 
-        - #### 재시도 값 파싱 및 Boolean 반환
-            - [ ] 재시도 입력 결과 반환
-                - 입력 값 검증
-                    - [ ] null 이면 `IllegalArgumentException` 예외 처리
-                    - [ ] 값이 1 또는 2 인 한 자리 숫자로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+            - #### 재시도 값 파싱 및 Boolean 반환
+                - [x] 재시도 입력 결과 반환: Boolean
 
     - ### InputValidator
         - #### 입력된 정답 값 검증
