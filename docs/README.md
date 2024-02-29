@@ -18,8 +18,8 @@
 
 - #### Answer: 3개의 단일 숫자를 가지는 리스트를 저장
     - 입력 받은 값을 검증한다.
-        - [ ] 개수 제한 조건을 충족하지 않으면 `IllegalArgumentException` 예외 처리
-        - [ ] 중복된 숫자가 존재하면 `IllegalArgumentException` 예외 처리
+        - [x] 개수 제한 조건을 충족하지 않으면 `IllegalArgumentException` 예외 처리
+        - [x] 중복된 숫자가 존재하면 `IllegalArgumentException` 예외 처리
 
 ### generator
 
