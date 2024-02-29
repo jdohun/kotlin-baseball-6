@@ -42,8 +42,28 @@
 
 ### InputView
 
-- [ ] 정답 입력
-- [ ] 재시작 여부 입력
+- [x] 정답 입력
+- [x] 재시작 여부 입력
+
+- ### util
+
+    - ### InputParser
+        - #### 정답 값 파싱 및 Answer 객체 반환
+            - validator 를 통한 입력 값 검증
+                - [ ] 정답 객체를 생성할 단일 숫자 객체로 변환
+
+        - #### 재시도 값 파싱 및 Boolean 반환
+            - [ ] 재시도 입력 결과 반환
+                - 입력 값 검증
+                    - [ ] null 이면 `IllegalArgumentException` 예외 처리
+                    - [ ] 값이 1 또는 2 인 한 자리 숫자로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+
+    - ### InputValidator
+        - #### 입력된 정답 값 검증
+            - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+
+        - #### 입력된 재시도 값 검증
+            - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
 
 ### OutputView
 
@@ -53,25 +73,3 @@
 
     - ### ComparisonResultFormat: 정답 비교 결과에 대한 출력문 포맷 저장
         - [x] ComparisonResult 에 따라 적절한 출력문 반환
-
-### parser
-
-- ### InputParser
-    - #### 정답 값 파싱 및 Answer 객체 반환
-        - validator 를 통한 입력 값 검증
-    - [ ] 정답 객체를 생성할 단일 숫자 객체로 변환
-
-    - #### 재시도 값 파싱 및 Boolean 반환
-        - [ ] 재시도 입력 결과 반환
-            - 입력 값 검증
-                - [ ] null 이면 `IllegalArgumentException` 예외 처리
-                - [ ] 값이 1 또는 2 인 한 자리 숫자로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
-
-### validator
-
-- ### InputValidator
-    - #### 입력된 정답 값 검증
-        - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
-
-    - #### 입력된 재시도 값 검증
-        - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
