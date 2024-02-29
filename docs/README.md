@@ -50,6 +50,9 @@
 - [ ] 게임 시작 안내문 출력
 - [ ] 입력한 정답에 대한 결과(게임 종료 포함) 출력
 
+  - ### ComparisonResultFormat: 정답 비교 결과에 대한 출력문 포맷 저장
+    - [x] ComparisonResult 에 따라 적절한 출력문 반환
+
 ### parser
 
 - ### InputParser
