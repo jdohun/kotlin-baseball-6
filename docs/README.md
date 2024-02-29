@@ -25,7 +25,8 @@
 ### generator
 
 - #### AutoAnswerGenerator
-    - 1~9 의 숫자를 무작위로 섞은 뒤 3개 숫자를 통해 단일 숫자 리스트를 저장한 Answer 반환
+    - `camp.nextstep.edu.missionutils.Randoms`의 `pickNumberInRange()`를 활용하여 1~9 중 중복되지 않는 무작위 숫자 3개를 추출한다.
+    - 추출된 3개의 랜덤 숫자를 통해 Answer 를 반환한다.
 
 ---
 
