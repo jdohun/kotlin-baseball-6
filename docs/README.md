@@ -20,11 +20,18 @@
     - 입력 받은 값을 검증한다.
         - [x] 개수 제한 조건을 충족하지 않으면 `IllegalArgumentException` 예외 처리
         - [x] 중복된 숫자가 존재하면 `IllegalArgumentException` 예외 처리
+    - [ ] Answer 간의 비교 결과를 반환한다.
 
 ### generator
 
 - #### AutoAnswerGenerator
     - 1~9 의 숫자를 무작위로 섞은 뒤 3개 숫자를 통해 단일 숫자 리스트를 저장한 Answer 반환
+
+---
+
+### dto
+
+- #### ComparisonResult: Answer 간의 비교 결과를 저장
 
 ---
 
@@ -58,8 +65,8 @@
 ### validator
 
 - ### InputValidator
-  - #### 입력된 정답 값 검증
-     - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+    - #### 입력된 정답 값 검증
+        - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
 
-    - #### 입력된 재시도 값 검증
-  - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+        - #### 입력된 재시도 값 검증
+    - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
