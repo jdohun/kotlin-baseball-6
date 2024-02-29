@@ -47,11 +47,12 @@
 
 ### OutputView
 
-- [ ] 게임 시작 안내문 출력
-- [ ] 입력한 정답에 대한 결과(게임 종료 포함) 출력
+- [x] 게임 최초 시작 안내문 출력
+- [x] 입력한 정답에 대한 결과 메시지 출력
+- [x] 게임 종료 메시지 출력
 
-  - ### ComparisonResultFormat: 정답 비교 결과에 대한 출력문 포맷 저장
-    - [x] ComparisonResult 에 따라 적절한 출력문 반환
+    - ### ComparisonResultFormat: 정답 비교 결과에 대한 출력문 포맷 저장
+        - [x] ComparisonResult 에 따라 적절한 출력문 반환
 
 ### parser
 
@@ -72,5 +73,5 @@
     - #### 입력된 정답 값 검증
         - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
 
-        - #### 입력된 재시도 값 검증
-    - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+    - #### 입력된 재시도 값 검증
+        - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
