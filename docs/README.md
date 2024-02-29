@@ -60,10 +60,10 @@
 
     - ### InputValidator
         - #### 입력된 정답 값 검증
-            - [ ] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+            - [x] 세 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
 
         - #### 입력된 재시도 값 검증
-            - [ ] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
+            - [x] 한 자리 숫자(0이 포함되지 않은)로만 이루어진 값이 아니라면 `IllegalArgumentException` 예외 처리
 
 ### OutputView
 
