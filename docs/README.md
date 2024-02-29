@@ -20,7 +20,7 @@
     - 입력 받은 값을 검증한다.
         - [x] 개수 제한 조건을 충족하지 않으면 `IllegalArgumentException` 예외 처리
         - [x] 중복된 숫자가 존재하면 `IllegalArgumentException` 예외 처리
-    - [ ] Answer 간의 비교 결과를 반환한다.
+    - [x] Answer 간의 비교 결과를 반환한다.
 
 ### generator
 

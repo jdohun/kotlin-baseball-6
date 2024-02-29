@@ -1,5 +1,7 @@
 package baseball.domain.model
 
+import baseball.dto.ComparisonResult
+
 data class Answer private constructor(private val singleNumbers: List<SingleNumber>) {
     companion object {
         const val LIMIT_ANSWER_SIZE = 3
@@ -25,5 +27,19 @@ data class Answer private constructor(private val singleNumbers: List<SingleNumb
                 throw IllegalArgumentException("중복된 숫자가 존재합니다.")
             }
         }
+    }
+
+    fun compare(target: Answer): ComparisonResult {
+        var strike: Int = 0
+        var ball: Int = 0
+
+        for ((index, singleNumber) in target.singleNumbers.withIndex()) {
+            val indexOf: Int = this.singleNumbers.indexOf(singleNumber)
+            when {
+                index == indexOf -> ++strike
+                indexOf != -1 -> ++ball
+            }
+        }
+        return ComparisonResult(ball, strike, strike == LIMIT_ANSWER_SIZE)
     }
 }
